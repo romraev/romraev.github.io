@@ -185,7 +185,7 @@
     width: 212px;
     height: 48px;
     background: none;
-    border-color: #FF6A6A;
+    border: 2px solid #FF6A6A;
     color: #F26376;
     font-size: 16px;
     font-weight: 400;
@@ -330,7 +330,7 @@
 }
 .featured__button__b:hover {
     background-color: #F16D7F;
-    border-color: #FF6A6A;
+    border: 2px solid #FF6A6A;
     color: white;
     transition: all 0.5s ease;
 }
@@ -397,7 +397,6 @@ summary::-webkit-details-marker {
 }
 details summary::before {
     content: '';
-    padding-top: 15px;
 }
 
 details[open] summary path {
@@ -536,6 +535,14 @@ details[open] summary path {
     .feedback_subscribe_i_b {
         padding-top: 22px;
     }
+    .feedback_subscribe_input {
+    width: 245px;
+    height: 47px;
+}
+.feedback_subscribe_button {
+    width: 95px;
+    height: 47px;
+}
     .footer {
         display: flex;
         flex-wrap: wrap;
