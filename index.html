@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Brand</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>The Brand Catalogue</title>
+    <script
+      src="https://kit.fontawesome.com/30eb328077.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header class="header center">
       <div class="header__left">
-        <a href="#" class="header-link-main">
+        <a href="./index.html" class="header-link-main">
           <div class="header__left__logo">
             <img
               src="./img/logo.png"
@@ -31,27 +35,65 @@
                     <h3>WOMEN</h3>
                     <hr />
                     <ul>
-                      <li><h4>Dresses</h4></li>
-                      <li><h4>Tops</h4></li>
-                      <li><h4>Sweaters/Knits</h4></li>
-                      <li><h4>Jackets/Coats</h4></li>
-                      <li><h4>Blazers</h4></li>
-                      <li><h4>Denim</h4></li>
-                      <li><h4>Leggins/Pants</h4></li>
-                      <li><h4>Skirts/Shorts</h4></li>
-                      <li><h4>Accessories</h4></li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Dresses</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Tops</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Sweaters/Knits</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Jackets/Coats</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Blazers</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Denim</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Leggins/Pants</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Skirts/Shorts</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Accessories</h4></a>
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <h3>MEN</h3>
                     <hr />
                     <ul>
-                      <li><h4>Tees/Tank tops</h4></li>
-                      <li><h4>Shirts/Polos</h4></li>
-                      <li><h4>Sweaters</h4></li>
-                      <li><h4>Sweatshirts/Hoodies</h4></li>
-                      <li><h4>Blazers</h4></li>
-                      <li><h4>Jackets/vests</h4></li>
+                      <li>
+                        <a class="hover-link" href=""
+                          ><h4>Tees/Tank tops</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Shirts/Polos</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Sweaters</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""
+                          ><h4>Sweatshirts/Hoodies</h4></a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Blazers</h4></a>
+                      </li>
+                      <li>
+                        <a class="hover-link" href=""><h4>Jackets/vests</h4></a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -100,7 +142,7 @@
           </button>
           <div class="header__right__details__cart">
             <article class="header__right__details__cart__thing">
-              <a href="#"
+              <a href="../pages/product.html"
                 ><img
                   class="header__right__details__cart__thing__img"
                   src="./img/thing1.jpg"
@@ -119,14 +161,16 @@
                   1 x $250
                 </h3>
               </div>
-              <img
-                src="./img/delete.jpg"
-                alt="delete"
-                class="header__right__details__cart__thing__delete"
-              />
+              <a href="">
+                <img
+                  src="./img/delete.jpg"
+                  alt="delete"
+                  class="header__right__details__cart__thing__delete"
+                />
+              </a>
             </article>
             <article class="header__right__details__cart__thing">
-              <a href="#"
+              <a href="../pages/product.html"
                 ><img
                   class="header__right__details__cart__thing__img"
                   src="./img/thing2.jpg"
@@ -145,11 +189,13 @@
                   1 x $250
                 </h3>
               </div>
-              <img
-                src="./img/delete.jpg"
-                alt="delete"
-                class="header__right__details__cart__thing__delete"
-              />
+              <a href="">
+                <img
+                  src="./img/delete.jpg"
+                  alt="delete"
+                  class="header__right__details__cart__thing__delete"
+                />
+              </a>
             </article>
             <div class="header__right__details__cart__total">
               <div class="header__right__details__cart__total__text">
@@ -160,24 +206,16 @@
               </div>
             </div>
             <div class="header__right__details__cart__buttons">
-              <a href="./checkout.html"
-                ><div class="header__right__details__cart__buttons__1">
-                  CHECKOUT
-                </div></a
-              >
-              <a href="./cart.html"
-                ><div class="header__right__details__cart__buttons__2">
-                  GO TO CART
-                </div></a
-              >
+              <a class="hover-unfill" href="./pages/checkout.html"> CHECKOUT</a>
+              <a class="hover-unfill" href="./pages/cart.html"> GO TO CART </a>
             </div>
           </div>
         </div>
-        <div class="header__right__account">My Account ▼</div>
+        <div class="header__right__account hover-unfill">My Account ▼</div>
       </div>
     </header>
-    <nav class="navigation">
-      <div class="container">
+    <section class="navigation">
+      <nav class="menu-container">
         <ul class="menu">
           <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
           <li class="menu-list">
@@ -185,38 +223,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -234,38 +272,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -283,38 +321,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -332,38 +370,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -381,38 +419,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -430,38 +468,38 @@
             <div class="mega-box">
               <div class="mega-item">
                 <h3 class="mega-title">Women</h3>
-                <a href="#" class="mega-link">Dresses</a>
-                <a href="#" class="mega-link">Tops</a>
-                <a href="#" class="mega-link">Sweaters/Knits</a>
-                <a href="#" class="mega-link">Jackets/Coats</a>
-                <a href="#" class="mega-link">Blazers</a>
-                <a href="#" class="mega-link">Denim</a>
-                <a href="#" class="mega-link">Leggings/Pants</a>
-                <a href="#" class="mega-link">Skirts/Shorts</a>
-                <a href="#" class="mega-link">Accessories </a>
+                <a href="#" class="mega-link hover-link">Dresses</a>
+                <a href="#" class="mega-link hover-link">Tops</a>
+                <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                <a href="#" class="mega-link hover-link">Jackets/Coats</a>
+                <a href="#" class="mega-link hover-link">Blazers</a>
+                <a href="#" class="mega-link hover-link">Denim</a>
+                <a href="#" class="mega-link hover-link">Leggings/Pants</a>
+                <a href="#" class="mega-link hover-link">Skirts/Shorts</a>
+                <a href="#" class="mega-link hover-link">Accessories </a>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
                 </div>
               </div>
               <div class="mega-item">
                 <div class="mega-item">
                   <h3 class="mega-title">Women</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
+                  <a href="#" class="mega-link hover-link">Dresses</a>
+                  <a href="#" class="mega-link hover-link">Tops</a>
+                  <a href="#" class="mega-link hover-link">Sweaters/Knits</a>
+                  <a href="#" class="mega-link hover-link">Jackets/Coats</a>
                 </div>
                 <div class="mega-item-img">
                   <img
@@ -475,16 +513,9 @@
             </div>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </section>
     <section class="top center">
-      <div class="top__photo hide">
-        <img
-          class="top__photo__img"
-          src="./img/top_photo.jpg"
-          alt="Photo of a man"
-        />
-      </div>
       <div class="top__brandname">
         <div class="top__brandname__text">
           <h1>
@@ -495,9 +526,16 @@
           </h1>
         </div>
       </div>
+      <div class="top__photo hide">
+        <img
+          class="top__photo__img"
+          src="./img/top_photo.jpg"
+          alt="Photo of a man"
+        />
+      </div>
     </section>
     <div class="whatsnew center">
-      <a href="#" class="whatsnew__item1">
+      <a href="./pages/catalogue.html" class="whatsnew__item1">
         <article class="whatsnew__item">
           <img
             class="whatsnew__item__image"
@@ -513,7 +551,7 @@
         </article>
       </a>
 
-      <a href="#" class="whatsnew__item2">
+      <a href="./pages/catalogue.html" class="whatsnew__item2">
         <article class="whatsnew__item">
           <img
             class="whatsnew__item__image"
@@ -529,7 +567,7 @@
         </article>
       </a>
 
-      <a href="#" class="whatsnew__item3">
+      <a href="./pages/catalogue.html" class="whatsnew__item3">
         <article class="whatsnew__item">
           <img
             class="whatsnew__item__image"
@@ -544,7 +582,7 @@
           </div>
         </article>
       </a>
-      <a href="#" class="whatsnew__item4">
+      <a href="./pages/catalogue.html" class="whatsnew__item4">
         <article class="whatsnew__item">
           <img
             class="whatsnew__item__image"
@@ -571,7 +609,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -594,7 +632,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_1.png" alt="1" />
             </a>
           </div>
@@ -606,7 +644,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -629,7 +667,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_2.png" alt="2" />
             </a>
           </div>
@@ -641,7 +679,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -664,7 +702,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_3.png" alt="3" />
             </a>
           </div>
@@ -676,7 +714,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -699,7 +737,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_4.png" alt="4" />
             </a>
           </div>
@@ -711,7 +749,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -734,7 +772,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_5.png" alt="5" />
             </a>
           </div>
@@ -746,7 +784,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -769,7 +807,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_6.png" alt="6" />
             </a>
           </div>
@@ -781,7 +819,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -804,7 +842,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_7.png" alt="1" />
             </a>
           </div>
@@ -816,7 +854,7 @@
         <article class="featured__table__item">
           <div class="featured__img_add">
             <div class="add_to_cart">
-              <a href="#" class="addtocart_button">
+              <a href="" class="addtocart_button hover-unfill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -839,7 +877,7 @@
                 >Add to Cart
               </a>
             </div>
-            <a href="#" class="featured-foto-link">
+            <a href="./pages/product.html" class="featured-foto-link">
               <img class="featured__img" src="./img/shirt_8.png" alt="2" />
             </a>
           </div>
@@ -850,7 +888,7 @@
         </article>
       </div>
       <div class="featured__button">
-        <a href="./pages/catalogue.html" class="featured__button__b"
+        <a href="./pages/catalogue.html" class="featured__button__b hover-fill"
           >Browse All Product</a
         >
       </div>
@@ -863,7 +901,6 @@
             alt="woman in snow"
             class="benefits__woman"
           />
-          <!-- <img src="./img/shadow.png" alt="" class="benefits__content__img__shadow"> -->
           <div class="benefits__head">
             <h2>
               <span class="benefits__head__30">30% </span>
@@ -975,18 +1012,21 @@
           <span class="subscribe_bold">SUBSCRIBE</span> <br />
           FOR OUR NEWLETTER AND PROMOTION
         </h2>
-        <div class="feedback_subscribe_i_b">
+        <form class="feedback_subscribe_i_b">
           <input
             class="feedback_subscribe_input"
             type="email"
             name="guest"
             id="email"
             placeholder="Enter Your Email"
+            required
           />
-          <button class="feedback_subscribe_button" type="submit">
-            Subscribe
-          </button>
-        </div>
+          <input
+            class="feedback_subscribe_button"
+            type="submit"
+            value="Submit"
+          />
+        </form>
       </div>
     </section>
     <section class="page-info center">
@@ -1019,33 +1059,63 @@
         <article class="info-category">
           <h2 class="info-category__header">COMPANY</h2>
           <ul class="info-category__list">
-            <li><a href="#" class="info-category__link">Home </a></li>
-            <li><a href="#" class="info-category__link">Shop</a></li>
-            <li><a href="#" class="info-category__link">About</a></li>
-            <li><a href="#" class="info-category__link">How It Works</a></li>
-            <li><a href="#" class="info-category__link">Contact</a></li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Home </a>
+            </li>
+            <li><a href="#" class="info-category__link hover-link">Shop</a></li>
+            <li>
+              <a href="#" class="info-category__link hover-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link"
+                >How It Works</a
+              >
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Contact</a>
+            </li>
           </ul>
         </article>
         <article class="info-category">
           <h2 class="info-category__header">INFORMATION</h2>
           <ul class="info-category__list">
             <li>
-              <a href="#" class="info-category__link">Tearms & Condition</a>
+              <a href="#" class="info-category__link hover-link"
+                >Tearms & Condition</a
+              >
             </li>
-            <li><a href="#" class="info-category__link">Privacy Policy</a></li>
-            <li><a href="#" class="info-category__link">How to Buy</a></li>
-            <li><a href="#" class="info-category__link">How to Sell</a></li>
-            <li><a href="#" class="info-category__link">Promotion</a></li>
+            <li>
+              <a href="#" class="info-category__link hover-link"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">How to Buy</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">How to Sell</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Promotion</a>
+            </li>
           </ul>
         </article>
         <article class="info-category">
           <h2 class="info-category__header">SHOP CATEGORY</h2>
           <ul class="info-category__list">
-            <li><a href="#" class="info-category__link">Men</a></li>
-            <li><a href="#" class="info-category__link">Women</a></li>
-            <li><a href="#" class="info-category__link">Child</a></li>
-            <li><a href="#" class="info-category__link">Apparel</a></li>
-            <li><a href="#" class="info-category__link">Brows All</a></li>
+            <li><a href="#" class="info-category__link hover-link">Men</a></li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Women</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Child</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Apparel</a>
+            </li>
+            <li>
+              <a href="#" class="info-category__link hover-link">Brows All</a>
+            </li>
           </ul>
         </article>
       </div>
@@ -1056,7 +1126,7 @@
       </div>
       <div class="footer_right">
         <a href="" class="footer_link"
-          ><div class="footer_icon">
+          ><div class="footer_icon hover-fill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="11"
@@ -1071,7 +1141,7 @@
             </svg></div
         ></a>
         <a href="" class="footer_link"
-          ><div class="footer_icon">
+          ><div class="footer_icon hover-fill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -1098,7 +1168,7 @@
             </svg></div
         ></a>
         <a href="" class="footer_link inactive"
-          ><div class="footer_icon">
+          ><div class="footer_icon hover-fill">
             <svg
               width="18"
               height="18"
@@ -1130,7 +1200,7 @@
             </svg></div
         ></a>
         <a href="" class="footer_link"
-          ><div class="footer_icon">
+          ><div class="footer_icon hover-fill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="13"
@@ -1157,7 +1227,7 @@
             </svg></div
         ></a>
         <a href="" class="footer_link"
-          ><div class="footer_icon">
+          ><div class="footer_icon hover-fill">
             <svg
               fill="#000000"
               width="24"
