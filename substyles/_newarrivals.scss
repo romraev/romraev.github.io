@@ -1,0 +1,34 @@
+.new_arrivals {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bgpink;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .na_header {
+    display: flex;
+    align-items: center;
+  }
+  .na_header h2 {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    color: $pink;
+  }
+  .na_path {
+    display: flex;
+    & a {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #636363;
+      &:last-child {
+        font-weight: 700;
+        color: $pink;
+      }
+      &:not(:last-child)::after {
+        content: " / ";
+      }
+    }
+  }

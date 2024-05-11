@@ -1,0 +1,351 @@
+@media (min-width: 768px) and (max-width: 1172px) {
+  .center {
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+  }
+  .header {
+    padding: 18px 30px;
+  }
+  .top__brandname {
+    margin-left: 39px;
+  }
+  .top__brandname__text {
+    padding-left: 16px;
+    margin-bottom: 20px;
+  }
+  .thebrand {
+    font-size: 44px;
+  }
+  .ofluxe {
+    font-size: 24px;
+  }
+  .fashion {
+    font-size: 24px;
+  }
+  .whatsnew {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 19.4px;
+  }
+  .cat_content {
+    flex-direction: column;
+  }
+  .dropdown_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .dd-menu-detail__list {
+    position: absolute;
+    background: white;
+    z-index: 2;
+  }
+  .cat.benefits .benefits__text {
+    gap: 10px;
+  }
+  .cat_filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cat_top_filters {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .cart-input {
+    width: 25vw;
+  }
+  .featured__table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .featured__text {
+    padding-bottom: 48px;
+  }
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    flex-wrap: wrap;
+    gap: 48px;
+    &__img {
+      display: none;
+    }
+  }
+  .prod-info-container {
+    padding: 20px 20px;
+  }
+  .prod-info.center {
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+  }
+  .feedback {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page-info {
+    gap: 20px;
+    flex-wrap: wrap;
+    & .categories {
+      gap: 0;
+    }
+    & .info-category {
+      width: 33vw;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 45vw);
+    padding-right: calc(50% - 45vw);
+  }
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    &__left {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      &__details {
+        &__summary {
+          padding: 10px 3px;
+        }
+        &__side_menu {
+          top: 108px;
+          &::before {
+            top: -30px;
+            left: 40px;
+          }
+        }
+      }
+      &__input {
+        width: 18vw;
+        height: 18px;
+      }
+      &__button {
+        padding: 9px;
+      }
+    }
+    &__right {
+      align-items: center;
+      &__details {
+        &__cart {
+          top: 122px;
+        }
+      }
+    }
+  }
+  .menu {
+    flex-wrap: wrap;
+  }
+  .menu-list:hover .mega-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .new_arrivals {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .top {
+    display: flex;
+    justify-content: center;
+  }
+  .hide {
+    display: none;
+  }
+  .top__brandname {
+    margin: 148px 56px;
+  }
+  .top__brandname__text {
+    margin-bottom: 0;
+  }
+  .thebrand {
+    font-size: 38px;
+  }
+  .ofluxe {
+    font-size: 20px;
+  }
+  .fashion {
+    font-size: 20px;
+  }
+  .whatsnew {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .cat_content {
+    flex-direction: column;
+  }
+  .dropdown_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .dd-menu-detail__list {
+    position: absolute;
+    background: white;
+    z-index: 2;
+  }
+  .cat.benefits .benefits__text {
+    gap: 10px;
+  }
+  .cat_filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cat_top_filters {
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cat_products__text_price {
+    text-align: center;
+  }
+  .cat_body_buttons {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .cart-input {
+    width: 280px;
+  }
+  .cart-table {
+    overflow: scroll;
+  }
+  .prod-slider img {
+    width: 100%;
+  }
+  .prod-info-bottom {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .addtocart_button.prod {
+    width: 210px;
+  }
+  .prod-info.center {
+    padding-left: calc(50% - 40vw);
+    padding-right: calc(50% - 40vw);
+  }
+  .prod-info-container {
+    padding: 20px;
+  }
+  .checkout-dd {
+    flex-direction: column;
+    align-items: center;
+  }
+  #email-input,
+  #psw-input {
+    width: 45vw;
+  }
+  .continue-button {
+    width: 25vw;
+    padding: 19px;
+    text-align: center;
+  }
+  .auth-buttons {
+    flex-wrap: wrap;
+  }
+
+  .featured__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .featured__text {
+    padding-bottom: 65px;
+  }
+  .featured__button {
+    padding-top: 40px;
+    padding-bottom: 85px;
+  }
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+    flex-wrap: wrap;
+    gap: 48px;
+    &__img {
+      display: none;
+    }
+  }
+  .cat.benefits .benefits__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px;
+  }
+  .feedback {
+    padding-top: 64px;
+    padding-bottom: 110px;
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feedback_quote_text {
+    font-size: 18px;
+  }
+  .feedback_subscribe_i_b {
+    padding-top: 22px;
+  }
+  .feedback_subscribe_input {
+    width: 200px;
+    height: 47px;
+  }
+  .feedback_subscribe_button {
+    width: 95px;
+    height: 47px;
+  }
+  .page-info {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .categories {
+      display: flex;
+      justify-content: space-between;
+    }
+    & .info-category {
+      width: auto;
+      &__header {
+        font-size: 12px;
+      }
+      & a {
+        font-size: 10px;
+        line-height: 30px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+  .footer_right {
+    order: -1;
+  }
+}

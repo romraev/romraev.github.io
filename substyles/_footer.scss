@@ -1,0 +1,35 @@
+.footer {
+  background-color: #e6e6e6;
+  @include justifyBetween();
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.footer_left p {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer_right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 7px;
+}
+.footer_icon {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & path {
+    fill: #b2b2b2;
+  }
+}
+.inactive {
+  pointer-events: none;
+  & div {
+    opacity: 0.3;
+  }
+}

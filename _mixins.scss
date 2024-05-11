@@ -1,0 +1,18 @@
+@mixin makeCentered($width) {
+    padding-left: calc(50% - ($width / 2));
+    padding-right: calc(50% - ($width / 2));
+};
+@mixin justifyBetween() {
+    display: flex;
+    justify-content: space-between;
+};
+@mixin textModel($color, $font-size, $font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+};
+@mixin alignCentrGap($gap) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+};

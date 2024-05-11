@@ -1,0 +1,195 @@
+.header {
+    background-color: white;
+    @include justifyBetween();
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-bottom: 1px solid #ececec;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+  .header__left a {
+    text-decoration: none;
+  }
+  .header__left {
+    @include alignCentrGap(36px);
+    &__logo {
+      @include alignCentrGap(10px);
+      &__img {
+        width: 59px;
+        height: 50px;
+      }
+      &__text {
+        @include textModel($black, 27px, 300);
+        &__D {
+          @include textModel($pink, 27px, 900);
+        }
+      }
+    }
+    &__browse {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    &__details {
+      &__summary {
+        @include textModel($black, 14px, 300);
+        padding: 13px 15px;
+        border-radius: 5px 0px 0px 5px;
+        border: 1px solid #e6e6e6;
+        background-color: #f5f5f5;
+        list-style-type: none;
+      }
+      &__summary::after {
+        content: " ▼";
+        font-family: "Font Awesome";
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #838383;
+      }
+      &__summary::marker {
+        display: none;
+      }
+      &__side_menu {
+        background-color: #ffffff;
+        border-radius: 5px;
+        position: absolute;
+        text-align: start;
+        top: 65px;
+        right: inherit;
+        width: 262px;
+        padding: 3px 13px;
+        text-align: start;
+        z-index: 6;
+      }
+      &__side_menu::before {
+        content: "";
+        border: 20px solid transparent;
+        border-bottom: 20px solid white;
+        position: absolute;
+        top: -26px;
+        left: 51px;
+      }
+      &__side_menu ul {
+        list-style-type: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      &__side_menu h3 {
+        padding-bottom: 9px;
+        color: #232323;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      &__side_menu hr {
+        border-bottom: #e8e8e8;
+      }
+      &__side_menu h4 {
+        margin-bottom: 11px;
+        margin-left: 5px;
+        color: #4f4f4f;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &__details[open] summary::after {
+      content: " ▲";
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #838383;
+    }
+    &__input {
+      border: 1px solid #e6e6e6;
+      background-color: #ffffff;
+      padding: 10px;
+      width: 10vw;
+    }
+    &__button {
+      padding: 12px;
+      border-radius: 0px 5px 5px 0px;
+      border: 1px solid #e6e6e6;
+      background-color: #ffffff;
+    }
+  }
+  .header__right {
+    display: flex;
+    gap: 26px;
+    align-items: end;
+    &__details {
+      display: block;
+      &:hover .header__right__details__cart {
+        display: flex;
+        flex-direction: column;
+      }
+      &__button {
+        background: none;
+        border: none;
+      }
+      &__cart {
+        display: none;
+        background-color: #ffffff;
+        border-radius: 5px;
+        position: absolute;
+        top: 75px;
+        padding: 4px 16px 16px 16px;
+        z-index: 7;
+        &__thing {
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          padding-bottom: 17px;
+          padding-top: 17px;
+          border-bottom: 1px solid #e6e6e6;
+          &__img {
+            width: 100%;
+          }
+          &__props {
+            &__header {
+              @include textModel($black, 12px, 700);
+            }
+            &__rating {
+              padding: 8px 57px 8px 0px;
+            }
+            &__price {
+              @include textModel($pink, 12px, 400);
+            }
+          }
+        }
+        &__total {
+          @include justifyBetween();
+          @include textModel($black, 16px, 700);
+          flex-direction: row;
+          padding-top: 20px;
+          padding-bottom: 31px;
+        }
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          & a {
+            text-decoration: none;
+            text-align: center;
+            background: none;
+            border: 2px solid #eaeaea;
+            @include textModel($grey, 14px, 700);
+            padding-top: 17px;
+            padding-bottom: 17px;
+          }
+        }
+      }
+    }
+  }
+  .header__right__account {
+    @include textModel(#ffffff, 15px, 400);
+    padding: 11px 19px;
+    background-color: $pink;
+    border: 1px solid $pink;
+    &:hover {
+      background-color: white;
+      color: $pink;
+    }
+  }
+  

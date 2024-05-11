@@ -1,0 +1,64 @@
+.page-info {
+    padding-top: 109px;
+    padding-bottom: 51px;
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand-info {
+    & a {
+      text-decoration: none;
+    }
+    &__logo {
+      padding-bottom: 29px;
+      @include alignCentrGap(10px);
+      &__img {
+        width: 59px;
+        height: 50px;
+      }
+      &__text {
+        padding-top: 10px;
+        overflow: auto;
+        @include textModel($black, 27px, 300);
+        &__D {
+          @include textModel($pink, 27px, 900);
+        }
+      }
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      color: $catGrey;
+      margin-bottom: 38px;
+    }
+  }
+  .categories {
+    display: flex;
+    gap: 27px;
+  }
+  .info-category {
+    width: 200px;
+    text-wrap: nowrap;
+    &__header {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: $pink;
+      margin-top: 14px;
+      margin-bottom: 33px;
+    }
+    & ul {
+      list-style: none;
+    }
+    & a {
+      text-decoration: none;
+      text-wrap: nowrap;
+      font-size: 16px;
+      line-height: 44px;
+      font-weight: 400;
+      color: $catGrey;
+    }
+  }

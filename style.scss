@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "vars";
+@import "mixins";
+@import "./substyles/header";
+@import "./substyles/cart";
+@import "./substyles/catalogue";
+@import "./substyles/checkout";
+@import "./substyles/feedback";
+@import "./substyles/footer";
+@import "./substyles/menu";
+@import "./substyles/page-info";
+@import "./substyles/product";
+@import "./substyles/newarrivals";
+@import "./substyles/supports";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  font-style: normal;
+  line-height: normal;
+  color: $black;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+.hover-fill {
+  &:hover {
+    border-color: $pink;
+    color: white;
+    background: $pink;
+    transition: all 0.5s ease;
+    & path {
+      fill: white;
+      transition: fill 0.5s ease;
+    }
+  }
+}
+.hover-unfill {
+  &:hover {
+    border-color: $pink;
+    color: $pink;
+    background: none;
+    transition: all 0.5s ease;
+    & path {
+      fill: $pink;
+      transition: fill 0.5s ease;
+    }
+  }
+}
+.hover-link {
+  &:hover {
+    transition: all 0.5s ease;
+    color: $pink
+  }
+}
+
+.center {
+  @include makeCentered($width);
+}
+
+.top {
+  background-color: #e8e8e8;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @include makeCentered($width);
+  &__photo {
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__brandname {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 220px;
+    &__text {
+      padding-left: 16px;
+      border-left: 12px solid #f16d7f;
+      text-align: start;
+    }
+  }
+}
+.thebrand {
+  color: $black;
+  font-size: 48px;
+  font-weight: 900;
+}
+.ofluxe {
+  color: $black;
+  font-size: 32px;
+  font-weight: 700;
+}
+.fashion {
+  color: $pink;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+.whatsnew__item1,
+.whatsnew__item2,
+.whatsnew__item3,
+.whatsnew__item4 {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.whatsnew {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 261px);
+  gap: 20px;
+  &__item__text {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    margin-top: 26px;
+    padding: 18px 15px;
+    text-align: start;
+    &__upperline {
+      @include textModel($black, 18px, 900);
+    }
+    &__lowerline {
+      @include textModel($pink, 30px, 900);
+    }
+  }
+  &__item__image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  & article:hover .whatsnew__item__image {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 0 30px white;
+    transition: all 0.5s ease-in-out;
+  }
+  & article:hover .whatsnew__item__text {
+    transform: scale(1.1);
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.whatsnew__item4 {
+  grid-row: 3;
+  grid-column: 1;
+}
+.whatsnew__item1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.whatsnew__item2 {
+  grid-row: span 2;
+  grid-column: 1;
+}
+.whatsnew__item3 {
+  grid-row: span 2;
+  grid-column: 2;
+}
+
+
+.featured__img_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.featured__img {
+  width: auto;
+}
+.add_to_cart {
+  display: none;
+}
+.add_to_cart a {
+  text-decoration: none;
+}
+.addtocart_button {
+  height: 24px;
+  padding: 8px 12px;
+  background: none;
+  border: 1px groove white;
+  border-radius: 3px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 11px;
+  &__1 {
+    flex-grow: 2;
+  }
+  &__2 {
+    flex-grow: 1;
+  }
+  &__3 {
+    flex-grow: 1;
+  }
+}
+.featured__text {
+  text-align: center;
+  padding-bottom: 58px;
+}
+.featured__text__heading {
+  color: $black;
+  font-size: 30px;
+  font-weight: 700;
+}
+.featured__text__paragraph {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.featured__table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  &__item__text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__item__heading {
+    color: $black;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  &__item__price {
+    color: $pink;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.featured__text_price {
+  padding: 24px 16px;
+}
+.featured__table__item:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease-out;
+  & .price-rating img {
+    visibility: visible;
+  }
+}
+.featured__table__item:hover .add_to_cart {
+  position: absolute;
+  background: none;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+.featured__table__item:hover .featured__img {
+  filter: brightness(40%);
+  transition: filter 0.5s ease-in-out;
+}
+.featured__button__b::after {
+  content: "  \279E";
+  font-size: 17px;
+  padding-left: 5px;
+}
+.featured__button {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 113px;
+}
+.featured__button__b {
+  text-decoration: none;
+  text-align: justify;
+  padding: 18px 24px;
+  background: none;
+  border: 2px solid #ff6a6a;
+  color: #f26376;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+
+.benefits {
+  padding-top: 113px;
+  padding-bottom: 97px;
+}
+.benefits__content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.benefits__img {
+  display: flex;
+  position: relative;
+  background-image: url("./img/shadow.png");
+}
+.benefits__woman {
+  position: relative;
+  z-index: -1;
+  width: auto;
+  height: 100%;
+}
+.benefits__head {
+  position: absolute;
+  z-index: 2;
+  margin-top: 145px;
+  margin-left: 40px;
+  font-weight: 700;
+  &__30 {
+    font-size: 53px;
+    color: white;
+  }
+  &__offer {
+    color: $pink;
+    font-size: 53px;
+  }
+  &__women {
+    font-size: 32px;
+    color: white;
+  }
+}
+.benefits__img:hover {
+  background: none;
+  transition: background 0.7s ease-in-out;
+}
+.benefits__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: $black;
+  padding: 48px 36px;
+  justify-content: center;
+}
+.benefits__item {
+  display: flex;
+  gap: 30px;
+  &__descript {
+    &__header {
+      padding-top: 5px;
+      padding-bottom: 16px;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      line-height: 24px;
+    }
+  }
+}
+
+@import "./substyles/medias";
