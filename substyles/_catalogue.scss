@@ -21,7 +21,7 @@
     border-left: 5px solid $pink;
     border-bottom: 1px solid #ebebeb;
   }
-  & summary::marker {
+  & summary::-webkit-details-marker {
     display: none;
   }
   &[open] .summ__triangle {

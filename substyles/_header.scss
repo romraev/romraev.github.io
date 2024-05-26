@@ -49,7 +49,7 @@
         letter-spacing: 0.025em;
         color: #838383;
       }
-      &__summary::marker {
+      & summary::-webkit-details-marker {
         display: none;
       }
       &__side_menu {

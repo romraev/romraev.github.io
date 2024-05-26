@@ -80,7 +80,7 @@
   letter-spacing: 0.025em;
   color: #838383;
 }
-.header__left__details__summary::marker {
+.header__left__details summary::-webkit-details-marker {
   display: none;
 }
 .header__left__details__side_menu {
@@ -486,7 +486,7 @@
   border-left: 5px solid #f16d7f;
   border-bottom: 1px solid #ebebeb;
 }
-.dd-menu-detail summary::marker {
+.dd-menu-detail summary::-webkit-details-marker {
   display: none;
 }
 .dd-menu-detail[open] .summ__triangle {
@@ -915,7 +915,7 @@
   font-weight: 700;
   border-bottom: 1px solid #eaeaea;
 }
-.checkout-summ::marker {
+.checkout-summ::-webkit-details-marker {
   display: none;
 }
 
