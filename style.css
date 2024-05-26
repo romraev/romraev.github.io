@@ -633,6 +633,8 @@
   background: #f16d7f;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 #price__range1::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -652,6 +654,8 @@
   background: #f16d7f;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 #price__range2::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -2562,7 +2566,8 @@
     padding: 10px 3px;
   }
   .header__left__details__side_menu {
-    top: 108px;
+    top: 54px;
+    width: 220px;
   }
   .header__left__details__side_menu::before {
     top: -30px;
@@ -2596,6 +2601,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    left: calc(50% - 325px);
+  }
+  .menu-list:hover .mega-box::before {
+    display: none;
   }
   .new_arrivals {
     -webkit-box-orient: vertical;
