@@ -62,7 +62,7 @@
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 16px;
   margin-top: 15px;
-  width: 235px;
+  // width: 235px;
 }
 .mega-item {
   display: flex;
@@ -70,11 +70,11 @@
   justify-content: space-between;
 }
 .menu-list {
-  position: relative;
+    position: relative;
 }
 .menu-list:hover .mega-box {
   display: flex;
-  gap: 46px;
+  gap: 40px;
 }
 .menu-list.cat {
   border-bottom: 3px solid white;

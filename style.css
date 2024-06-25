@@ -1346,7 +1346,6 @@
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 16px;
   margin-top: 15px;
-  width: 235px;
 }
 
 .mega-item {
@@ -1370,7 +1369,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 46px;
+  gap: 40px;
 }
 
 .menu-list.cat {
@@ -2529,14 +2528,13 @@
   }
   .page-info {
     gap: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .page-info .categories {
-    gap: 0;
-  }
-  .page-info .info-category {
-    width: 33vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -2567,7 +2565,7 @@
   }
   .header__left__details__side_menu {
     top: 54px;
-    width: 220px;
+    width: 175px;
   }
   .header__left__details__side_menu::before {
     top: -30px;
@@ -2586,7 +2584,7 @@
             align-items: center;
   }
   .header__right__details__cart {
-    top: 122px;
+    top: 108px;
   }
   .menu {
     -ms-flex-wrap: wrap;
@@ -2601,7 +2599,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    left: calc(50% - 325px);
+    left: auto;
+    right: auto;
   }
   .menu-list:hover .mega-box::before {
     display: none;
@@ -2829,7 +2828,7 @@
     padding-top: 22px;
   }
   .feedback_subscribe_input {
-    width: 200px;
+    width: 175px;
     height: 47px;
   }
   .feedback_subscribe_button {
@@ -2838,19 +2837,22 @@
   }
   .page-info {
     gap: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .page-info .categories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .page-info .categories {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
   }
   .page-info .info-category {
     width: auto;
