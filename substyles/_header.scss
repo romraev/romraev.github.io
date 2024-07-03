@@ -144,7 +144,8 @@
           padding-top: 17px;
           border-bottom: 1px solid #e6e6e6;
           &__img {
-            width: 100%;
+            width: 72px;
+            height: 85px;
           }
           &__props {
             &__header {
@@ -193,3 +194,8 @@
     }
   }
   
+.cart_empty {
+  @include textModel($black, 16px, 700);
+  text-align: center;
+  padding: 20px;
+}

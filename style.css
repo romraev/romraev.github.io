@@ -191,7 +191,8 @@
   border-bottom: 1px solid #e6e6e6;
 }
 .header__right__details__cart__thing__img {
-  width: 100%;
+  width: 72px;
+  height: 85px;
 }
 .header__right__details__cart__thing__props__header {
   color: #222222;
@@ -256,6 +257,14 @@
 .header__right__account:hover {
   background-color: white;
   color: #f16d7f;
+}
+
+.cart_empty {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
 }
 
 .cart_body {
